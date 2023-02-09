@@ -1,0 +1,108 @@
+.왼쪽
+{
+    width : 20%;
+    height : 700px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    
+}
+
+.오른쪽
+{
+    width : 20%;
+    height : 700px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#전체
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .doughnut-shape {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    animation: spin 20s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .doughnut-shape img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.제목
+{
+font-size: 30px;
+font-family: 'Nanum Gothic Coding', monospace;
+margin-top:20px;
+}
+
+.가수 {
+    margin-bottom: 100px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size:15px;
+    margin-top: 10px;
+    color: rgb(226, 226, 226);
+
+
+}
+.음악
+{
+    background-color: white;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 350px;
+}
+.재생버튼
+{
+    position: relative;
+    top: 0;
+
+    height: 50px;
+    width: 50px;
+    color: white;
+    z-index: 100;
+}
+
+body{
+    background-image: url("qorud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.가운데{
+ border-radius: 50%;
+ background-color: black;   
+ height: 60px;
+ width: 60px;
+ z-index: 100;
+}

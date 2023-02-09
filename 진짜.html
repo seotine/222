@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="진짜.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b6605d068d.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b6605d068d.js" crossorigin="anonymous"></script>
+    
+      </style>
+</head>
+<body>
+    <div id="전체">
+        <div class="왼쪽"> </div>
+
+        <div class="오른쪽">
+            <div class="doughnut-shape">
+                <!-- <div class="hole"></div> -->
+                <img src="오르트.PNG" alt="Your Image">
+                <div class="가운데"> </div>
+            </div>
+        <div class="제목"> 오르트구름 </div>
+        <div class="가수"> 윤하 (YOUNHA) </div>
+        <i class="재생버튼 fa-solid fa-play fa-4x"></i>
+
+
+    </div>
+    
+<script> 
+    const music = new Audio("오르트구름.mp3");
+    const playButton = document.querySelector(".재생버튼");
+
+    playButton.addEventListener("click", playMusic);
+
+    function playMusic(event) {
+        if(music.paused) {
+            playButton.classList.remove("fa-play");
+            playButton.classList.add("fa-pause");
+            music.play();
+        }
+        else {
+            playButton.classList.remove("fa-pause");
+            playButton.classList.add("fa-play");
+            music.pause();
+        }
+    }
+</script>
+
+</body>
+</html>
